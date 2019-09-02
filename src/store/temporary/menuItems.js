@@ -1,0 +1,240 @@
+export default {
+  data: [
+    {
+      id: 0,
+      name: 'squad',
+      title: 'Состав команды',
+      icon: '../../static-assets/icons/badge.svg',
+      subItems: [
+        {
+          id: 0,
+          name: 'squadList',
+          title: 'Списочный состав',
+          icon: '',
+          subItems: [
+            {
+              id: 0,
+              name: 'consolidated_report',
+              title: 'Сводный отчёт',
+              link: '',
+            },
+            {
+              id: 1,
+              name: 'tournament_report',
+              title: 'Отчёт по составу на турнир 11*11',
+              link: '',
+            },
+            {
+              id: 2,
+              name: 'training_report',
+              title: 'Отчёт по составу заявленных игроков',
+              link: '',
+            },
+            {
+              id: 3,
+              name: 'debtors',
+              title: 'Задолжности',
+              link: '',
+            },
+          ],
+        },
+        {
+          id: 1,
+          name: 'attendance',
+          title: 'Посещаемость',
+          icon: '',
+          subItems: [
+            {
+              id: 0,
+              name: 'consolidated_report',
+              title: 'Сводный отчёт',
+              link: '',
+            },
+            {
+              id: 1,
+              name: 'attendance_tournaments',
+              title: 'Посещаемость игр',
+              link: '',
+            },
+            {
+              id: 2,
+              name: 'attendance_tranining_ground',
+              title: 'Посещаемость тренировок',
+              link: '',
+            },
+          ],
+        },
+        {
+          id: 2,
+          name: 'finance',
+          title: 'Финансовая отчётность',
+          icon: '',
+          subItems: [
+            {
+              id: 0,
+              name: 'consolidated_report',
+              title: 'Сводный отчёт',
+              link: '',
+            },
+            {
+              id: 1,
+              name: 'tournaments_finance',
+              title: 'Баланс взносов и игр чемпионата',
+              link: '',
+            },
+            {
+              id: 2,
+              name: 'tournaments_finance',
+              title: 'Баланс тренировочного процеса',
+              link: '',
+            },
+            {
+              id: 3,
+              name: 'debtors_tournaments',
+              title: 'Задолжности по играм',
+              link: '',
+            },
+            {
+              id: 4,
+              name: 'debtors_tranining_ground',
+              title: 'Задолжности по тренировкам',
+              link: '',
+            },
+            {
+              id: 5,
+              name: 'uniform',
+              title: 'Задолжности по форме',
+              link: '',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 1,
+      name: 'tournaments',
+      title: 'Турниры',
+      icon: '../../static-assets/icons/tournament.svg',
+      subItems: [],
+    },
+    {
+      id: 2,
+      name: 'gallery',
+      title: 'Галерея',
+      icon: '../../static-assets/icons/soccer-ball.svg',
+      subItems: [],
+    },
+    {
+      id: 3,
+      name: 'trainings',
+      title: 'Тренировки',
+      icon: '../../static-assets/icons/soccer-field.svg',
+      subItems: [
+        {
+          id: 1,
+          name: 'plan',
+          title: 'Годичный план',
+          icon: '',
+          subItems: [
+            {
+              id: 0,
+              name: 'consolidated_report',
+              title: 'Сводный отчёт',
+              link: '',
+            },
+            {
+              id: 1,
+              name: 'tasks',
+              title: 'Задачи по циклам',
+              link: '',
+            },
+            {
+              id: 2,
+              name: 'progress',
+              title: 'Успеваемость',
+              link: '',
+            },
+          ],
+        },
+        {
+          id: 1,
+          name: 'physical',
+          title: 'Физ. подготовка',
+          icon: '',
+          subItems: [
+            {
+              id: 0,
+              name: 'plan',
+              title: 'Планирование',
+              link: '',
+            },
+            {
+              id: 1,
+              name: 'gym',
+              title: 'В тренажёром зале',
+              link: '',
+            },
+            {
+              id: 2,
+              name: 'ground',
+              title: 'На поле',
+              link: '',
+            },
+            {
+              id: 3,
+              name: 'progress',
+              title: 'Успеваемость',
+              link: '',
+            },
+            {
+              id: 4,
+              name: 'exercices',
+              title: 'Библиотека упражнений',
+              link: '',
+            },
+          ],
+        },
+        {
+          id: 2,
+          name: 'technical_education',
+          title: 'Техническая подготовка',
+          icon: '',
+          subItems: [
+            {
+              id: 0,
+              name: 'plan',
+              title: 'Планирование',
+              link: '',
+            },
+            {
+              id: 1,
+              name: 'progress',
+              title: 'Успеваемость',
+              link: '',
+            },
+            {
+              id: 2,
+              name: 'exercices',
+              title: 'Библиотека упражнений',
+              link: '',
+            },
+          ],
+        },
+      ],
+    },
+    {
+      id: 4,
+      name: 'archive',
+      title: 'Архив',
+      icon: '../../static-assets/icons/box.svg',
+      subItems: [],
+    },
+    {
+      id: 5,
+      name: 'fans',
+      title: 'Болельщики',
+      icon: '../../static-assets/icons/cheerleader.svg',
+      subItems: [],
+    },
+  ],
+};
