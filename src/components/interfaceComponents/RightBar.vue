@@ -12,7 +12,9 @@
               <div class="sub-menu__title">{{ element.title }}</div>
 
               <ul class="sub-menu__list">
-                <li v-for="subItem in element.subItems" class="sub-menu__list-item">{{ subItem.title }}</li>
+                <li v-for="subItem in element.subItems" class="sub-menu__list-item">
+                  <router-link :to="{name: subItem.link}" class="sub-menu__list-link">{{ subItem.title }}</router-link>
+                </li>
               </ul>
             </li>
           </ul>
@@ -38,6 +40,9 @@ export default {
         this.menuItems[this.activeItemId].subItems.length > 0 &&
         this.activeItemId !== null
       );
+    },
+    activeItem() {
+      console.log(this.$route)
     },
   },
   data() {
@@ -166,7 +171,7 @@ export default {
     margin-left: 38px;
     padding-left: 13px;
     border-left: 2px solid #d5dade;
-    color: #353d4a;
+    
   }
 
   .sub-menu__list-item {
@@ -174,6 +179,16 @@ export default {
 
     &:last-child {
       margin-bottom: 0;
+    }
+  }
+
+  .sub-menu__list-link {
+    color: #353d4a;
+    text-decoration: none;
+    transition: color ease 0.2s;
+
+    &:hover {
+      color: #0080ff;
     }
   }
 }

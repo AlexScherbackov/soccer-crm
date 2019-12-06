@@ -16,13 +16,13 @@ export default {
               id: 0,
               name: 'consolidated_report',
               title: 'Сводный отчёт',
-              link: '',
+              link: 'squad',
             },
             {
               id: 1,
               name: 'tournament_report',
               title: 'Отчёт по составу на турнир 11*11',
-              link: '',
+              link: 'mainSquad',
             },
             {
               id: 2,

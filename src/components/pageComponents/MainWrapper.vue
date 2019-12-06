@@ -6,18 +6,22 @@
     <div class="top-line main-wrapper__top">
       <top-line class="bg-white" />
     </div>
-    <div class="main-wrapper__content bg-grey">test</div>
+    <div class="main-wrapper__content bg-grey">
+      <router-view></router-view>
+    </div>
   </div>
 </template>
 <script>
 //--Components--//
 import RightBar from '../interfaceComponents/RightBar.vue';
 import TopLine from '../interfaceComponents/TopLine.vue';
+import SquadlistConsolidatedReport from '../pageComponents/SquadlistConsolidatedReport.vue';
 
 export default {
   components: {
     RightBar,
-    TopLine
+    TopLine,
+    SquadlistConsolidatedReport,
   },
 };
 </script>
@@ -42,6 +46,7 @@ export default {
 
   & .main-wrapper__content {
     grid-area: content;
+    padding: 20px;
   }
 }
 </style>
